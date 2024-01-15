@@ -80,3 +80,22 @@ ros2 topic list
 ros2 topic echo /joint_states
 
 ```
+
+## RUN the robot state publisher with URDF in the terminal (command line)
+
+```bash
+# instal xacro
+sudo apt install ros-humble-xacro
+
+ros2 run robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$(xacro urdf_file)"
+
+# TO load joint_state_publisher of robot install gui package
+sudo apt install ros-humble-joint-state-publisher-gui
+# Run this package
+ros2 run joint_state_publisher_gui joint_state_publisher_gui
+# Start rviz simulation
+ros2 run rviz2 rviz2
+
+# This is the process to run urdf with urdf_turotial package
+
+```
