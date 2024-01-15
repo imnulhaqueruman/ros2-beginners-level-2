@@ -60,3 +60,23 @@ ros2 launch urdf_tutorial display.launch.py model:=/home/emon/development/ros2-b
 ```
 
 ### In continuous type joint no need to any limit .This type of joint need to rotate wheel.
+
+## Robot state publisher and URDF work together
+
+```bash
+#1 to view frames of tf and connect between link and joint
+ros2 run tf2_tools view_frames -o robot_wheel.urdf
+
+#2 To see rqt graph
+rqt_graph
+
+```
+
+![rqt_graph](image.png)
+
+```bash
+ros2 topic list
+# See /joint_states and tf topics
+ros2 topic echo /joint_states
+
+```
