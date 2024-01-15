@@ -99,3 +99,20 @@ ros2 run rviz2 rviz2
 # This is the process to run urdf with urdf_turotial package
 
 ```
+
+# Ros2 create robot description package with urdf
+
+```bash
+mkdir ros2_ws
+cd ros2_ws
+mkdir src
+cd ros2_ws
+colcon build
+source install/setup.bash
+cd ros2_ws/src
+
+# then run
+ros2 pkg create my_robot_description
+# Then cd to my_robot_description and remove include and src folder
+# create urdf folder
+```
