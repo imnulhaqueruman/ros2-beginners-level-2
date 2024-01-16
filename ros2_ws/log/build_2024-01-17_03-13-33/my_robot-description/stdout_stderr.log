@@ -1,0 +1,26 @@
+-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/emon/development/ros2-beginners-level-2/ros2_ws/build/my_robot-description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description//urdf/robot-wheel.urdf.xacro
+-- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description//launch/display.launch.py
+-- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description//launch/display.launch.xml
+-- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description//rviz/my_robot.rviz
+-- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/ament_index/resource_index/package_run_dependencies/my_robot-description
+-- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/ament_index/resource_index/parent_prefix_path/my_robot-description
+-- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/environment/ament_prefix_path.sh
+-- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/environment/path.sh
+-- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/environment/path.dsv
+-- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/local_setup.bash
+-- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/local_setup.sh
+-- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/local_setup.zsh
+-- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/local_setup.dsv
+-- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/package.dsv
+-- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/ament_index/resource_index/packages/my_robot-description
+-- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/cmake/my_robot-descriptionConfig.cmake
+-- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/cmake/my_robot-descriptionConfig-version.cmake
+-- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/package.xml

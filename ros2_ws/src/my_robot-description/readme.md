@@ -47,3 +47,23 @@ ros2 run rviz2 rviz2 -d ~/Documents/my_robot.rviz
     />
 
 ```
+
+# Make the URDF Compatible with xacro
+
+### Install xacro
+
+```bash
+sudo apt install ros-humble-xacro
+```
+
+1. Rename the Urdf file with "urdf.xacro" extension or just "xacro" extnsion
+2. changes in urdf file in robot start tag as like :
+
+```bash
+<robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+```
+
+3. Rename urdf file path in launch file and again colcon build.
+
+# Create Veraible with Xacro properties
