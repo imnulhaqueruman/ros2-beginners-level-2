@@ -19,3 +19,31 @@ colcon build
  ros2 launch my_robot-description display.launch.xml
 
 ```
+
+## Add default Robotmodel and Tf in rviz config
+
+1. save rviz file to any directory
+2. Apply below command
+
+```bash
+ros2 run rviz2 rviz2 -d ~/Documents/my_robot.rviz
+
+
+```
+
+## Add Rivz config in launch file
+
+1. create rviz folder in pkg directory
+2. paste config file in this folder
+3. Add in CMakelists install rviz
+
+```bash
+# create variable for rviz path
+     <let name="rviz_config"
+          value="$(find-pkg-share my_robot-description)/rviz/my_robot.rviz"/>
+# Add this variable in rviz node as a arguments
+ <node pkg="rviz2" exec="rviz2"  output="screen"
+          args="-d $(var rviz_config)"
+    />
+
+```

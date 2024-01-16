@@ -9,6 +9,8 @@ def generate_launch_description():
 
     urdf_path= os.path.join(get_package_share_path('my_robot-description'),
                              'urdf', 'robot-wheel.urdf')
+    rviz_config_path = os.path.join(get_package_share_path('my_robot-description'),
+                             'rviz', 'my_robot.rviz')
     robot_description=ParameterValue(Command(['xacro ', urdf_path]), value_type=str)
 
     robot_state_publisher_node = Node(
@@ -22,7 +24,8 @@ def generate_launch_description():
     )
     rviz2_node=Node(
         package="rviz2",
-        executable="rviz2"
+        executable="rviz2",
+        arguments=["-d",rviz_config_path]
     )
     return LaunchDescription([
         robot_state_publisher_node,

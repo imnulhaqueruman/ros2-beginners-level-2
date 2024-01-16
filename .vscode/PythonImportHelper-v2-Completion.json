@@ -1,0 +1,537 @@
+[
+    {
+        "label": "LaunchDescription",
+        "importPath": "launch",
+        "description": "launch",
+        "isExtraImport": true,
+        "detail": "launch",
+        "documentation": {}
+    },
+    {
+        "label": "LaunchDescription",
+        "importPath": "launch",
+        "description": "launch",
+        "isExtraImport": true,
+        "detail": "launch",
+        "documentation": {}
+    },
+    {
+        "label": "ParameterValue",
+        "importPath": "launch_ros.parameter_descriptions",
+        "description": "launch_ros.parameter_descriptions",
+        "isExtraImport": true,
+        "detail": "launch_ros.parameter_descriptions",
+        "documentation": {}
+    },
+    {
+        "label": "ParameterValue",
+        "importPath": "launch_ros.parameter_descriptions",
+        "description": "launch_ros.parameter_descriptions",
+        "isExtraImport": true,
+        "detail": "launch_ros.parameter_descriptions",
+        "documentation": {}
+    },
+    {
+        "label": "Command",
+        "importPath": "launch.substitutions",
+        "description": "launch.substitutions",
+        "isExtraImport": true,
+        "detail": "launch.substitutions",
+        "documentation": {}
+    },
+    {
+        "label": "Command",
+        "importPath": "launch.substitutions",
+        "description": "launch.substitutions",
+        "isExtraImport": true,
+        "detail": "launch.substitutions",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "launch_ros.actions",
+        "description": "launch_ros.actions",
+        "isExtraImport": true,
+        "detail": "launch_ros.actions",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "launch_ros.actions",
+        "description": "launch_ros.actions",
+        "isExtraImport": true,
+        "detail": "launch_ros.actions",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_package_share_path",
+        "importPath": "ament_index_python.packages",
+        "description": "ament_index_python.packages",
+        "isExtraImport": true,
+        "detail": "ament_index_python.packages",
+        "documentation": {}
+    },
+    {
+        "label": "get_package_share_path",
+        "importPath": "ament_index_python.packages",
+        "description": "ament_index_python.packages",
+        "isExtraImport": true,
+        "detail": "ament_index_python.packages",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "OrderedDict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "OrderedDict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "generate_launch_description",
+        "kind": 2,
+        "importPath": "ros2_ws.install.my_robot-description.share.my_robot-description.launch.display.launch",
+        "description": "ros2_ws.install.my_robot-description.share.my_robot-description.launch.display.launch",
+        "peekOfCode": "def generate_launch_description():\n    urdf_path= os.path.join(get_package_share_path('my_robot-description'),\n                             'urdf', 'robot-wheel.urdf')\n    rviz_config_path = os.path.join(get_package_share_path('my_robot-description'),\n                             'rviz', 'my_robot.rviz')\n    robot_description=ParameterValue(Command(['xacro ', urdf_path]), value_type=str)\n    robot_state_publisher_node = Node(\n        package=\"robot_state_publisher\",\n        executable=\"robot_state_publisher\",\n        parameters=[{'robot_description':robot_description}]",
+        "detail": "ros2_ws.install.my_robot-description.share.my_robot-description.launch.display.launch",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "def main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',\n        help='The file extension of the primary shell')\n    parser.add_argument(\n        'additional_extension', nargs='?',\n        help='The additional file extension to be considered')",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "get_packages",
+        "kind": 2,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "def get_packages(prefix_path, merged_install):\n    \"\"\"\n    Find packages based on colcon-specific files created during installation.\n    :param Path prefix_path: The install prefix path of all packages\n    :param bool merged_install: The flag if the packages are all installed\n      directly in the prefix or if each package is installed in a subdirectory\n      named after the package\n    :returns: A mapping from the package name to the set of runtime\n      dependencies\n    :rtype: dict",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "add_package_runtime_dependencies",
+        "kind": 2,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "def add_package_runtime_dependencies(path, packages):\n    \"\"\"\n    Check the path and if it exists extract the packages runtime dependencies.\n    :param Path path: The resource file containing the runtime dependencies\n    :param dict packages: A mapping from package names to the sets of runtime\n      dependencies to add to\n    \"\"\"\n    content = path.read_text()\n    dependencies = set(content.split(os.pathsep) if content else [])\n    packages[path.name] = dependencies",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "order_packages",
+        "kind": 2,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "def order_packages(packages):\n    \"\"\"\n    Order packages topologically.\n    :param dict packages: A mapping from package name to the set of runtime\n      dependencies\n    :returns: The package names\n    :rtype: list\n    \"\"\"\n    # select packages with no dependencies in alphabetical order\n    to_be_ordered = list(packages.keys())",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "reduce_cycle_set",
+        "kind": 2,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "def reduce_cycle_set(packages):\n    \"\"\"\n    Reduce the set of packages to the ones part of the circular dependency.\n    :param dict packages: A mapping from package name to the set of runtime\n      dependencies which is modified in place\n    \"\"\"\n    last_depended = None\n    while len(packages) > 0:\n        # get all remaining dependencies\n        depended = set()",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "get_commands",
+        "kind": 2,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "def get_commands(pkg_name, prefix, primary_extension, additional_extension):\n    commands = []\n    package_dsv_path = os.path.join(prefix, 'share', pkg_name, 'package.dsv')\n    if os.path.exists(package_dsv_path):\n        commands += process_dsv_file(\n            package_dsv_path, prefix, primary_extension, additional_extension)\n    return commands\ndef process_dsv_file(\n    dsv_path, prefix, primary_extension=None, additional_extension=None\n):",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "process_dsv_file",
+        "kind": 2,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "def process_dsv_file(\n    dsv_path, prefix, primary_extension=None, additional_extension=None\n):\n    commands = []\n    if _include_comments():\n        commands.append(FORMAT_STR_COMMENT_LINE.format_map({'comment': dsv_path}))\n    with open(dsv_path, 'r') as h:\n        content = h.read()\n    lines = content.splitlines()\n    basenames = OrderedDict()",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "handle_dsv_types_except_source",
+        "kind": 2,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "def handle_dsv_types_except_source(type_, remainder, prefix):\n    commands = []\n    if type_ in (DSV_TYPE_SET, DSV_TYPE_SET_IF_UNSET):\n        try:\n            env_name, value = remainder.split(';', 1)\n        except ValueError:\n            raise RuntimeError(\n                \"doesn't contain a semicolon separating the environment name \"\n                'from the value')\n        try_prefixed_value = os.path.join(prefix, value) if value else prefix",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_COMMENT_LINE",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "FORMAT_STR_COMMENT_LINE = '# {comment}'\nFORMAT_STR_SET_ENV_VAR = 'Set-Item -Path \"Env:{name}\" -Value \"{value}\"'\nFORMAT_STR_USE_ENV_VAR = '$env:{name}'\nFORMAT_STR_INVOKE_SCRIPT = '_colcon_prefix_powershell_source_script \"{script_path}\"'\nFORMAT_STR_REMOVE_LEADING_SEPARATOR = ''\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = ''\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_SET_ENV_VAR",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "FORMAT_STR_SET_ENV_VAR = 'Set-Item -Path \"Env:{name}\" -Value \"{value}\"'\nFORMAT_STR_USE_ENV_VAR = '$env:{name}'\nFORMAT_STR_INVOKE_SCRIPT = '_colcon_prefix_powershell_source_script \"{script_path}\"'\nFORMAT_STR_REMOVE_LEADING_SEPARATOR = ''\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = ''\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_USE_ENV_VAR",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "FORMAT_STR_USE_ENV_VAR = '$env:{name}'\nFORMAT_STR_INVOKE_SCRIPT = '_colcon_prefix_powershell_source_script \"{script_path}\"'\nFORMAT_STR_REMOVE_LEADING_SEPARATOR = ''\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = ''\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_INVOKE_SCRIPT",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "FORMAT_STR_INVOKE_SCRIPT = '_colcon_prefix_powershell_source_script \"{script_path}\"'\nFORMAT_STR_REMOVE_LEADING_SEPARATOR = ''\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = ''\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_REMOVE_LEADING_SEPARATOR",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "FORMAT_STR_REMOVE_LEADING_SEPARATOR = ''\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = ''\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_REMOVE_TRAILING_SEPARATOR",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "FORMAT_STR_REMOVE_TRAILING_SEPARATOR = ''\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_APPEND_NON_DUPLICATE",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "DSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_PREPEND_NON_DUPLICATE",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "DSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "DSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_SET",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "DSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',\n        help='The file extension of the primary shell')",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_SET_IF_UNSET",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "DSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',\n        help='The file extension of the primary shell')\n    parser.add_argument(",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_SOURCE",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "DSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',\n        help='The file extension of the primary shell')\n    parser.add_argument(\n        'additional_extension', nargs='?',",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "env_state",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_ps1",
+        "description": "ros2_ws.install._local_setup_util_ps1",
+        "peekOfCode": "env_state = {}\ndef _append_unique_value(name, value):\n    global env_state\n    if name not in env_state:\n        if os.environ.get(name):\n            env_state[name] = set(os.environ[name].split(os.pathsep))\n        else:\n            env_state[name] = set()\n    # append even if the variable has not been set yet, in case a shell script sets the\n    # same variable without the knowledge of this Python script.",
+        "detail": "ros2_ws.install._local_setup_util_ps1",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "def main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',\n        help='The file extension of the primary shell')\n    parser.add_argument(\n        'additional_extension', nargs='?',\n        help='The additional file extension to be considered')",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "get_packages",
+        "kind": 2,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "def get_packages(prefix_path, merged_install):\n    \"\"\"\n    Find packages based on colcon-specific files created during installation.\n    :param Path prefix_path: The install prefix path of all packages\n    :param bool merged_install: The flag if the packages are all installed\n      directly in the prefix or if each package is installed in a subdirectory\n      named after the package\n    :returns: A mapping from the package name to the set of runtime\n      dependencies\n    :rtype: dict",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "add_package_runtime_dependencies",
+        "kind": 2,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "def add_package_runtime_dependencies(path, packages):\n    \"\"\"\n    Check the path and if it exists extract the packages runtime dependencies.\n    :param Path path: The resource file containing the runtime dependencies\n    :param dict packages: A mapping from package names to the sets of runtime\n      dependencies to add to\n    \"\"\"\n    content = path.read_text()\n    dependencies = set(content.split(os.pathsep) if content else [])\n    packages[path.name] = dependencies",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "order_packages",
+        "kind": 2,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "def order_packages(packages):\n    \"\"\"\n    Order packages topologically.\n    :param dict packages: A mapping from package name to the set of runtime\n      dependencies\n    :returns: The package names\n    :rtype: list\n    \"\"\"\n    # select packages with no dependencies in alphabetical order\n    to_be_ordered = list(packages.keys())",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "reduce_cycle_set",
+        "kind": 2,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "def reduce_cycle_set(packages):\n    \"\"\"\n    Reduce the set of packages to the ones part of the circular dependency.\n    :param dict packages: A mapping from package name to the set of runtime\n      dependencies which is modified in place\n    \"\"\"\n    last_depended = None\n    while len(packages) > 0:\n        # get all remaining dependencies\n        depended = set()",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "get_commands",
+        "kind": 2,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "def get_commands(pkg_name, prefix, primary_extension, additional_extension):\n    commands = []\n    package_dsv_path = os.path.join(prefix, 'share', pkg_name, 'package.dsv')\n    if os.path.exists(package_dsv_path):\n        commands += process_dsv_file(\n            package_dsv_path, prefix, primary_extension, additional_extension)\n    return commands\ndef process_dsv_file(\n    dsv_path, prefix, primary_extension=None, additional_extension=None\n):",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "process_dsv_file",
+        "kind": 2,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "def process_dsv_file(\n    dsv_path, prefix, primary_extension=None, additional_extension=None\n):\n    commands = []\n    if _include_comments():\n        commands.append(FORMAT_STR_COMMENT_LINE.format_map({'comment': dsv_path}))\n    with open(dsv_path, 'r') as h:\n        content = h.read()\n    lines = content.splitlines()\n    basenames = OrderedDict()",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "handle_dsv_types_except_source",
+        "kind": 2,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "def handle_dsv_types_except_source(type_, remainder, prefix):\n    commands = []\n    if type_ in (DSV_TYPE_SET, DSV_TYPE_SET_IF_UNSET):\n        try:\n            env_name, value = remainder.split(';', 1)\n        except ValueError:\n            raise RuntimeError(\n                \"doesn't contain a semicolon separating the environment name \"\n                'from the value')\n        try_prefixed_value = os.path.join(prefix, value) if value else prefix",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_COMMENT_LINE",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "FORMAT_STR_COMMENT_LINE = '# {comment}'\nFORMAT_STR_SET_ENV_VAR = 'export {name}=\"{value}\"'\nFORMAT_STR_USE_ENV_VAR = '${name}'\nFORMAT_STR_INVOKE_SCRIPT = 'COLCON_CURRENT_PREFIX=\"{prefix}\" _colcon_prefix_sh_source_script \"{script_path}\"'\nFORMAT_STR_REMOVE_LEADING_SEPARATOR = 'if [ \"$(echo -n ${name} | head -c 1)\" = \":\" ]; then export {name}=${{{name}#?}} ; fi'\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = 'if [ \"$(echo -n ${name} | tail -c 1)\" = \":\" ]; then export {name}=${{{name}%?}} ; fi'\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_SET_ENV_VAR",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "FORMAT_STR_SET_ENV_VAR = 'export {name}=\"{value}\"'\nFORMAT_STR_USE_ENV_VAR = '${name}'\nFORMAT_STR_INVOKE_SCRIPT = 'COLCON_CURRENT_PREFIX=\"{prefix}\" _colcon_prefix_sh_source_script \"{script_path}\"'\nFORMAT_STR_REMOVE_LEADING_SEPARATOR = 'if [ \"$(echo -n ${name} | head -c 1)\" = \":\" ]; then export {name}=${{{name}#?}} ; fi'\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = 'if [ \"$(echo -n ${name} | tail -c 1)\" = \":\" ]; then export {name}=${{{name}%?}} ; fi'\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_USE_ENV_VAR",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "FORMAT_STR_USE_ENV_VAR = '${name}'\nFORMAT_STR_INVOKE_SCRIPT = 'COLCON_CURRENT_PREFIX=\"{prefix}\" _colcon_prefix_sh_source_script \"{script_path}\"'\nFORMAT_STR_REMOVE_LEADING_SEPARATOR = 'if [ \"$(echo -n ${name} | head -c 1)\" = \":\" ]; then export {name}=${{{name}#?}} ; fi'\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = 'if [ \"$(echo -n ${name} | tail -c 1)\" = \":\" ]; then export {name}=${{{name}%?}} ; fi'\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_INVOKE_SCRIPT",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "FORMAT_STR_INVOKE_SCRIPT = 'COLCON_CURRENT_PREFIX=\"{prefix}\" _colcon_prefix_sh_source_script \"{script_path}\"'\nFORMAT_STR_REMOVE_LEADING_SEPARATOR = 'if [ \"$(echo -n ${name} | head -c 1)\" = \":\" ]; then export {name}=${{{name}#?}} ; fi'\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = 'if [ \"$(echo -n ${name} | tail -c 1)\" = \":\" ]; then export {name}=${{{name}%?}} ; fi'\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_REMOVE_LEADING_SEPARATOR",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "FORMAT_STR_REMOVE_LEADING_SEPARATOR = 'if [ \"$(echo -n ${name} | head -c 1)\" = \":\" ]; then export {name}=${{{name}#?}} ; fi'\nFORMAT_STR_REMOVE_TRAILING_SEPARATOR = 'if [ \"$(echo -n ${name} | tail -c 1)\" = \":\" ]; then export {name}=${{{name}%?}} ; fi'\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "FORMAT_STR_REMOVE_TRAILING_SEPARATOR",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "FORMAT_STR_REMOVE_TRAILING_SEPARATOR = 'if [ \"$(echo -n ${name} | tail -c 1)\" = \":\" ]; then export {name}=${{{name}%?}} ; fi'\nDSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_APPEND_NON_DUPLICATE",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "DSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_PREPEND_NON_DUPLICATE",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "DSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'\nDSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "DSV_TYPE_PREPEND_NON_DUPLICATE_IF_EXISTS = 'prepend-non-duplicate-if-exists'\nDSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_SET",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "DSV_TYPE_SET = 'set'\nDSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',\n        help='The file extension of the primary shell')",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_SET_IF_UNSET",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "DSV_TYPE_SET_IF_UNSET = 'set-if-unset'\nDSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',\n        help='The file extension of the primary shell')\n    parser.add_argument(",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "DSV_TYPE_SOURCE",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "DSV_TYPE_SOURCE = 'source'\ndef main(argv=sys.argv[1:]):  # noqa: D103\n    parser = argparse.ArgumentParser(\n        description='Output shell commands for the packages in topological '\n                    'order')\n    parser.add_argument(\n        'primary_extension',\n        help='The file extension of the primary shell')\n    parser.add_argument(\n        'additional_extension', nargs='?',",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "env_state",
+        "kind": 5,
+        "importPath": "ros2_ws.install._local_setup_util_sh",
+        "description": "ros2_ws.install._local_setup_util_sh",
+        "peekOfCode": "env_state = {}\ndef _append_unique_value(name, value):\n    global env_state\n    if name not in env_state:\n        if os.environ.get(name):\n            env_state[name] = set(os.environ[name].split(os.pathsep))\n        else:\n            env_state[name] = set()\n    # append even if the variable has not been set yet, in case a shell script sets the\n    # same variable without the knowledge of this Python script.",
+        "detail": "ros2_ws.install._local_setup_util_sh",
+        "documentation": {}
+    },
+    {
+        "label": "generate_launch_description",
+        "kind": 2,
+        "importPath": "ros2_ws.src.my_robot-description.launch.display.launch",
+        "description": "ros2_ws.src.my_robot-description.launch.display.launch",
+        "peekOfCode": "def generate_launch_description():\n    urdf_path= os.path.join(get_package_share_path('my_robot-description'),\n                             'urdf', 'robot-wheel.urdf')\n    rviz_config_path = os.path.join(get_package_share_path('my_robot-description'),\n                             'rviz', 'my_robot.rviz')\n    robot_description=ParameterValue(Command(['xacro ', urdf_path]), value_type=str)\n    robot_state_publisher_node = Node(\n        package=\"robot_state_publisher\",\n        executable=\"robot_state_publisher\",\n        parameters=[{'robot_description':robot_description}]",
+        "detail": "ros2_ws.src.my_robot-description.launch.display.launch",
+        "documentation": {}
+    }
+]
