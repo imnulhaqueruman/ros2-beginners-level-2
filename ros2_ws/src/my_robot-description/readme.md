@@ -67,3 +67,8 @@ sudo apt install ros-humble-xacro
 3. Rename urdf file path in launch file and again colcon build.
 
 # Create Veraible with Xacro properties
+
+```bash
+  <xacro:property name="base_length" value="0.6"/>
+
+```
