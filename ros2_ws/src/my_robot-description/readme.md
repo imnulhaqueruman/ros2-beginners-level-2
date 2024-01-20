@@ -72,3 +72,21 @@ sudo apt install ros-humble-xacro
   <xacro:property name="base_length" value="0.6"/>
 
 ```
+
+# Create Functions with xacro macros
+
+```bash
+# create macro with dynamic params
+    <xacro:macro name="example_macro" params="a b c">
+        <link  name="dummy">
+            <visual>
+                <geometry>
+                    <box size="${a} ${b} ${c}"/>
+                </geometry>
+            </visual>
+        </link>
+    </xacro:macro>
+    #call macro
+    <xacro:example_macro a="2" b="3" c="4"/>
+
+```
