@@ -90,3 +90,34 @@ sudo apt install ros-humble-xacro
     <xacro:example_macro a="2" b="3" c="4"/>
 
 ```
+
+# Include a xacro file in another xacro file
+
+```bash
+
+ <xacro:include filename="common_properties.xacro" />
+ # in common_properties file define the common things of robot_wheel.urdf file
+ <?xml version="1.0"?>
+    <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+        <material name="blue">
+            <color rgba="0 0 0.5 1" />
+        </material>
+
+        <material name="grey">
+            <color rgba="0.5 0.5 0.5 1" />
+        </material>
+        <xacro:macro name="box_inertia" params="m l h w xyz rpy">
+            <inertial>
+                <origin xyz="${xyz}" rpy="${rpy}"/>
+                <mass value="${m}"/>
+                <inertia ixx="${(m/12) * (h*h + l*l)}" ixy="0" ixz="0"
+                iyy="{$(m/12) * (w*w + h*h)}" iyz="0"
+                izz="{$(m/12 * (w*w + l*l)}"/>
+            </inertial>
+        </xacro:macro>
+
+    </robot>
+# In robot tag there is no need any name attribute
+
+```
