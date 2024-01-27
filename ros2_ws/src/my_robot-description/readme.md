@@ -121,3 +121,48 @@ sudo apt install ros-humble-xacro
 # In robot tag there is no need any name attribute
 
 ```
+
+# Spawn The robot in gazebo
+
+1. Open the 4 terminal
+2. In 1st terminal and run
+
+```bash
+ ros2 run robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$(xacro ~/development/ros2-beginners-level-2/ros2_ws/src/my_robot-description/urdf/robot-wheel.urdf.xacro)"
+
+
+```
+
+3. In 2nd terminal
+
+```bash
+# First try this command and open gazebo
+ros2 launch gazebo_ros gazebo.launch.py
+# If not work then try
+gazebo --verbose -s libgazebo_ros_factory.so
+```
+
+4. In 3rd terminal
+
+```bash
+ros2 topic list
+
+/clock
+/joint_states
+/parameter_events
+/robot_description
+/rosout
+/tf
+/tf_static
+
+```
+
+5. In 4th terminal
+
+```bash
+ ros2 run gazebo_ros spawn_entity.py -topic robot_description -entity my_robot
+```
+
+#### Hurrah ! Finally urdf model export in gazebo
+
+![Alt text](image.png)
