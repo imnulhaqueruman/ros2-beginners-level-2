@@ -3,7 +3,7 @@
     <let name="urdf_path" 
          value="$(find-pkg-share my_robot-description)/urdf/robot-wheel.urdf.xacro" />
     <let name="rviz_config_path"
-         value="$(find-pkg-share my_robot_bringup)/rviz/urdf_config.rviz" />
+         value="$(find-pkg-share my_robot_bringup)/rviz/my_robot.rviz" />
 
     <node pkg="robot_state_publisher" exec="robot_state_publisher">
         <param name="robot_description"
