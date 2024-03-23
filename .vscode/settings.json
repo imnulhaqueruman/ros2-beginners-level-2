@@ -1,0 +1,18 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/emon/development/ros2_begginers/build/my_py_pkg_project",
+        "/home/emon/development/ros2_begginers/install/my_py_pkg_project/lib/python3.10/site-packages",
+        "/home/emon/development/ros2_begginers/build/my_py_pkg",
+        "/home/emon/development/ros2_begginers/install/my_py_pkg/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/emon/development/ros2_begginers/build/my_py_pkg_project",
+        "/home/emon/development/ros2_begginers/install/my_py_pkg_project/lib/python3.10/site-packages",
+        "/home/emon/development/ros2_begginers/build/my_py_pkg",
+        "/home/emon/development/ros2_begginers/install/my_py_pkg/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

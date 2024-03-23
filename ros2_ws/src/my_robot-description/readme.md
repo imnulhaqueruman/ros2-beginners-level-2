@@ -166,3 +166,32 @@ ros2 topic list
 #### Hurrah ! Finally urdf model export in gazebo
 
 ![Alt text](image.png)
+
+# Move Robot in gazebo 
+
+1. Launch Rviz 
+```bash
+ ros2 launch my_robot-description display.launch.xml
+```
+2. Launch gazebo 
+```bash
+gazebo --verbose -s libgazebo_ros_factory.so
+
+```
+3. Spawn Robot entity 
+```bash
+ros2 run gazebo_ros spawn_entity.py -topic robot_description -entity my_robot
+
+```
+4. Run command line value to run the robot 
+```bash
+ros2 topic list 
+
+ros2 interface show geometry_msgs/msg/Twist
+
+ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.5}, angular: {z: 0}}"
+
+
+
+```
+### Now robot is complete 
