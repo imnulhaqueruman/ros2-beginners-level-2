@@ -1,0 +1,35 @@
+[0.198s] Invoking command in '/home/emon/development/ros2-beginners-level-2/ros2_ws/build/my_robot-description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/emon/development/ros2_begginers/install/my_py_pkg_project:/home/emon/development/ros2_begginers/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/emon/development/ros2-beginners-level-2/ros2_ws/src/my_robot-description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description
+[0.221s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.562s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.745s] -- Configuring done
+[0.753s] -- Generating done
+[0.756s] -- Build files have been written to: /home/emon/development/ros2-beginners-level-2/ros2_ws/build/my_robot-description
+[0.763s] Invoked command in '/home/emon/development/ros2-beginners-level-2/ros2_ws/build/my_robot-description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/emon/development/ros2_begginers/install/my_py_pkg_project:/home/emon/development/ros2_begginers/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/emon/development/ros2-beginners-level-2/ros2_ws/src/my_robot-description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description
+[0.768s] Invoking command in '/home/emon/development/ros2-beginners-level-2/ros2_ws/build/my_robot-description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/emon/development/ros2_begginers/install/my_py_pkg_project:/home/emon/development/ros2_begginers/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/emon/development/ros2-beginners-level-2/ros2_ws/build/my_robot-description -- -j8 -l8
+[0.878s] Invoked command in '/home/emon/development/ros2-beginners-level-2/ros2_ws/build/my_robot-description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/emon/development/ros2_begginers/install/my_py_pkg_project:/home/emon/development/ros2_begginers/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/emon/development/ros2-beginners-level-2/ros2_ws/build/my_robot-description -- -j8 -l8
+[0.992s] Invoking command in '/home/emon/development/ros2-beginners-level-2/ros2_ws/build/my_robot-description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/emon/development/ros2_begginers/install/my_py_pkg_project:/home/emon/development/ros2_begginers/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/emon/development/ros2-beginners-level-2/ros2_ws/build/my_robot-description
+[1.002s] -- Install configuration: ""
+[1.006s] -- Execute custom install script
+[1.009s] -- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description//urdf/camera.xacro
+[1.033s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description//urdf/common_properties.xacro
+[1.033s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description//urdf/mobile_base_gazebo.xacro
+[1.033s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description//urdf/robot-wheel.urdf.xacro
+[1.034s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description//launch/display.launch.py
+[1.034s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description//launch/display.launch.xml
+[1.034s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description//rviz/my_robot.rviz
+[1.035s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/ament_index/resource_index/package_run_dependencies/my_robot-description
+[1.035s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/ament_index/resource_index/parent_prefix_path/my_robot-description
+[1.038s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/environment/ament_prefix_path.sh
+[1.042s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/environment/ament_prefix_path.dsv
+[1.043s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/environment/path.sh
+[1.044s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/environment/path.dsv
+[1.045s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/local_setup.bash
+[1.046s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/local_setup.sh
+[1.048s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/local_setup.zsh
+[1.049s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/local_setup.dsv
+[1.049s] -- Symlinking: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/package.dsv
+[1.079s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/ament_index/resource_index/packages/my_robot-description
+[1.080s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/cmake/my_robot-descriptionConfig.cmake
+[1.080s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/cmake/my_robot-descriptionConfig-version.cmake
+[1.080s] -- Up-to-date symlink: /home/emon/development/ros2-beginners-level-2/ros2_ws/install/my_robot-description/share/my_robot-description/package.xml
+[1.090s] Invoked command in '/home/emon/development/ros2-beginners-level-2/ros2_ws/build/my_robot-description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/emon/development/ros2_begginers/install/my_py_pkg_project:/home/emon/development/ros2_begginers/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/emon/development/ros2-beginners-level-2/ros2_ws/build/my_robot-description
