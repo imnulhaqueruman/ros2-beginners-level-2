@@ -1,9 +1,0 @@
-/home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover/CMakeFiles/uninstall.dir
-/home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover/CMakeFiles/my_rover_uninstall.dir
-/home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover/CMakeFiles/test.dir
-/home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover/CMakeFiles/edit_cache.dir
-/home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover/CMakeFiles/rebuild_cache.dir
-/home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover/CMakeFiles/list_install_components.dir
-/home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover/CMakeFiles/install.dir
-/home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover/CMakeFiles/install/local.dir
-/home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover/CMakeFiles/install/strip.dir
