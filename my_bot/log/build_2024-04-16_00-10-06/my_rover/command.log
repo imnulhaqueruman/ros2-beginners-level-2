@@ -1,0 +1,4 @@
+Invoking command in '/home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover -- -j12 -l12
+Invoked command in '/home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover -- -j12 -l12
+Invoking command in '/home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover
+Invoked command in '/home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover
