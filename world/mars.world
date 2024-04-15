@@ -1,0 +1,60 @@
+
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="Mars_World">
+    <!-- Set Mars atmosphere properties -->
+    <atmosphere type="mars">
+      <!-- Define atmospheric parameters -->
+      <temperature>220</temperature> <!-- Average surface temperature in Kelvin -->
+      <pressure>600</pressure> <!-- Atmospheric pressure in pascals -->
+      <composition>
+        <!-- Define composition of Martian atmosphere -->
+        <species>n2</species>
+        <species>co2</species>
+        <!-- Add more species if needed -->
+      </composition>
+    </atmosphere>
+
+    <!-- Define Mars terrain -->
+    <include>
+      <uri>model://mars_terrain</uri>
+      <!-- You would need to define the actual Mars terrain model -->
+      <!-- Adjust the URI according to where your model is located -->
+    </include>
+
+    <!-- Add Mars landmarks or features (optional) -->
+    <!-- Example: -->
+    <model name="mars_rover">
+      <static>true</static> <!-- Set to true if the model doesn't move -->
+      <pose>0 0 0 0 0 0</pose> <!-- Adjust the pose as needed -->
+      <link name="body">
+        <!-- Add a rover model or any other landmark -->
+        <!-- You would need to define the actual model -->
+        <!-- Adjust the URI according to where your model is located -->
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>model://mars_rover/meshes/rover.dae</uri>
+              <!-- Adjust the URI according to where your model is located -->
+            </mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Add lighting (optional) -->
+    <include>
+      <uri>model://sun</uri>
+      <!-- You would need to define the sun model -->
+      <!-- Adjust the URI according to where your model is located -->
+    </include>
+
+    <!-- Add physics properties (optional) -->
+    <physics type="ode">
+      <!-- Define physics properties here -->
+    </physics>
+    
+    <!-- Add other elements as needed -->
+
+  </world>
+</sdf>

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/emon/development/ros2-beginners-level-2/ros2_ws/src/my_robot-description
+CMAKE_SOURCE_DIR = /home/poridhi/development/ros2-beginners-level-2/my_bot/src/my_rover
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/emon/development/ros2-beginners-level-2/ros2_ws/build/my_robot-description
+CMAKE_BINARY_DIR = /home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/emon/development/ros2-beginners-level-2/ros2_ws/build/my_robot-description/CMakeFiles /home/emon/development/ros2-beginners-level-2/ros2_ws/build/my_robot-description//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover/CMakeFiles /home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/emon/development/ros2-beginners-level-2/ros2_ws/build/my_robot-description/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -185,17 +185,17 @@ uninstall/fast:
 .PHONY : uninstall/fast
 
 #=============================================================================
-# Target rules for targets named my_robot-description_uninstall
+# Target rules for targets named my_rover_uninstall
 
 # Build rule for target.
-my_robot-description_uninstall: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_robot-description_uninstall
-.PHONY : my_robot-description_uninstall
+my_rover_uninstall: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_rover_uninstall
+.PHONY : my_rover_uninstall
 
 # fast build rule for target.
-my_robot-description_uninstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_robot-description_uninstall.dir/build.make CMakeFiles/my_robot-description_uninstall.dir/build
-.PHONY : my_robot-description_uninstall/fast
+my_rover_uninstall/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_rover_uninstall.dir/build.make CMakeFiles/my_rover_uninstall.dir/build
+.PHONY : my_rover_uninstall/fast
 
 # Help Target
 help:
@@ -210,7 +210,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... my_robot-description_uninstall"
+	@echo "... my_rover_uninstall"
 	@echo "... uninstall"
 .PHONY : help
 

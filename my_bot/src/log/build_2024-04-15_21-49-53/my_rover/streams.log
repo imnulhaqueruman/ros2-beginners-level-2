@@ -1,0 +1,49 @@
+[0.006s] Invoking command in '/home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/poridhi/development/ros2-beginners-level-2/my_bot/src/my_rover -DCMAKE_INSTALL_PREFIX=/home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover
+[0.059s] -- The C compiler identification is GNU 11.4.0
+[0.093s] -- The CXX compiler identification is GNU 11.4.0
+[0.097s] -- Detecting C compiler ABI info
+[0.137s] -- Detecting C compiler ABI info - done
+[0.141s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.142s] -- Detecting C compile features
+[0.142s] -- Detecting C compile features - done
+[0.144s] -- Detecting CXX compiler ABI info
+[0.189s] -- Detecting CXX compiler ABI info - done
+[0.194s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.194s] -- Detecting CXX compile features
+[0.194s] -- Detecting CXX compile features - done
+[0.195s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.282s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.372s] -- Configuring done
+[0.373s] -- Generating done
+[0.373s] -- Build files have been written to: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover
+[0.377s] Invoked command in '/home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/poridhi/development/ros2-beginners-level-2/my_bot/src/my_rover -DCMAKE_INSTALL_PREFIX=/home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover
+[0.377s] Invoking command in '/home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover -- -j12 -l12
+[0.399s] Invoked command in '/home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover -- -j12 -l12
+[0.417s] Invoking command in '/home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover
+[0.420s] -- Install configuration: ""
+[0.421s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover//config
+[0.421s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover//config/empty.yaml
+[0.421s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover//description
+[0.421s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover//description/inertial_macros.xacro
+[0.421s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover//description/robot_core.xacro
+[0.421s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover//description/robot.urdf.xacro
+[0.421s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover//launch
+[0.421s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover//launch/rsp.launch.py
+[0.421s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover//worlds
+[0.421s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover//worlds/empty.world
+[0.421s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/ament_index/resource_index/package_run_dependencies/my_rover
+[0.421s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/ament_index/resource_index/parent_prefix_path/my_rover
+[0.421s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover/environment/ament_prefix_path.sh
+[0.422s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover/environment/ament_prefix_path.dsv
+[0.422s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover/environment/path.sh
+[0.422s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover/environment/path.dsv
+[0.422s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover/local_setup.bash
+[0.422s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover/local_setup.sh
+[0.422s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover/local_setup.zsh
+[0.422s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover/local_setup.dsv
+[0.422s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover/package.dsv
+[0.422s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/ament_index/resource_index/packages/my_rover
+[0.422s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover/cmake/my_roverConfig.cmake
+[0.422s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover/cmake/my_roverConfig-version.cmake
+[0.422s] -- Installing: /home/poridhi/development/ros2-beginners-level-2/my_bot/src/install/my_rover/share/my_rover/package.xml
+[0.423s] Invoked command in '/home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/poridhi/development/ros2-beginners-level-2/my_bot/src/build/my_rover
