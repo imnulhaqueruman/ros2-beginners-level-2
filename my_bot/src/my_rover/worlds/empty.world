@@ -1,13 +1,36 @@
-<?xml version="1.0" ?>
-<sdf version="1.5">
-  <world name="default">
-    <!-- A global light source -->
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="lunar_surface_world">
+  
+    <!-- Define the physics properties -->
+    <physics type="ode">
+      <gravity>0 0 -1.622</gravity> <!-- Lunar gravity in m/s^2 -->
+      <max_step_size>0.001</max_step_size> <!-- Simulation step size -->
+    </physics>
+    
+    <!-- Define the lighting -->
+    <scene>
+      <ambient>0.2 0.2 0.2 1</ambient> <!-- Ambient light color -->
+      <background>0 0 0 1</background> <!-- Background color (black) -->
+      <shadows>true</shadows> <!-- Enable shadows -->
+    </scene>
+    
+    <!-- Define the lunar surface terrain -->
     <include>
-      <uri>model://sun</uri>
+      <uri>model://lunar_surface</uri> <!-- Placeholder for terrain model -->
     </include>
-    <!-- A ground plane -->
+    
+    <!-- Define craters -->
     <include>
-      <uri>model://ground_plane</uri>
+      <uri>model://crater</uri> <!-- Placeholder for crater model -->
+      <pose>-10 10 0 0 0 0</pose> <!-- Example pose of a crater -->
     </include>
+    
+    <!-- Define rocks -->
+    <include>
+      <uri>model://rock</uri> <!-- Placeholder for rock model -->
+      <pose>5 -5 0 0 0 0</pose> <!-- Example pose of a rock -->
+    </include>
+    
   </world>
 </sdf>
