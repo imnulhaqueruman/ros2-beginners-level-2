@@ -40,3 +40,33 @@ ros2 run rviz2 rviz2
 # 3rd terminal 
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
+
+## Slam_tollbox 
+
+```bash
+sudo apt install ros-humble-slam-toolbox
+```
+```bash
+# Copy to config file 
+cp /opt/ros/humble/share/slam_toolbox/config/mapper_params_online_async.yaml ~/development/ros2-beginners-level-2/my_bot/src/my_rover/config/
+
+
+```
+1. 
+```bash 
+ros2 launch my_rover launch_sim.launch.py world:=./src/my_rover/worlds/obstacle.world
+
+```
+2. 
+```bash
+ros2 run rviz2 rviz2
+
+```
+3. Slam launch 
+
+```bash
+cd ~/development/ros2-beginners-level-2/my_bot
+ros2 launch slam_toolbox online_async_launch.py params_file:= ./src/my_rover/config/mapper_params_online_async.yaml use_sim_time:=true
+
+```
+4. ros2 run teleop_twist_keyboard teleop_twist_keyboard

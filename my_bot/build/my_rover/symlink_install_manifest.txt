@@ -1,6 +1,9 @@
 /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//config/empty.yaml
+/home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//config/gaz_ros2_ctl_use_sim.yaml
 /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//config/gazebo_params.yaml
 /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//config/joystick.yaml
+/home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//config/mapper_params_online_async.yaml
+/home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//config/my_controllers.yaml
 /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//config/twist_mux.yaml
 /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//description/camera.xacro
 /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//description/depth_camera.xacro
@@ -9,6 +12,7 @@
 /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//description/lidar.xacro
 /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//description/robot.urdf.xacro
 /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//description/robot_core.xacro
+/home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//description/ros2_control.xacro
 /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//launch/joystick.launch.py
 /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//launch/launch_sim.launch.py
 /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//launch/rplidar.launch.py

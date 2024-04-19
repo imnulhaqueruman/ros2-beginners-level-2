@@ -1,0 +1,41 @@
+[0.007s] Invoking command in '/home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover -- -j12 -l12
+[0.031s] Invoked command in '/home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover -- -j12 -l12
+[0.051s] Invoking command in '/home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover
+[0.055s] -- Install configuration: ""
+[0.055s] -- Execute custom install script
+[0.056s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//config/empty.yaml
+[0.056s] -- Symlinking: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//config/gaz_ros2_ctl_use_sim.yaml
+[0.061s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//config/gazebo_params.yaml
+[0.061s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//config/joystick.yaml
+[0.061s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//config/my_controllers.yaml
+[0.061s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//config/twist_mux.yaml
+[0.061s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//description/camera.xacro
+[0.061s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//description/depth_camera.xacro
+[0.061s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//description/gazebo_control.xacro
+[0.061s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//description/inertial_macros.xacro
+[0.061s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//description/lidar.xacro
+[0.061s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//description/robot.urdf.xacro
+[0.061s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//description/robot_core.xacro
+[0.061s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//description/ros2_control.xacro
+[0.061s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//launch/joystick.launch.py
+[0.061s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//launch/launch_sim.launch.py
+[0.061s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//launch/rplidar.launch.py
+[0.061s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//launch/rsp.launch.py
+[0.061s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//worlds/empty.world
+[0.062s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover//worlds/obstacle.world
+[0.062s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/ament_index/resource_index/package_run_dependencies/my_rover
+[0.062s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/ament_index/resource_index/parent_prefix_path/my_rover
+[0.062s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover/environment/ament_prefix_path.sh
+[0.062s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover/environment/ament_prefix_path.dsv
+[0.062s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover/environment/path.sh
+[0.062s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover/environment/path.dsv
+[0.062s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover/local_setup.bash
+[0.062s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover/local_setup.sh
+[0.062s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover/local_setup.zsh
+[0.062s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover/local_setup.dsv
+[0.062s] -- Symlinking: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover/package.dsv
+[0.067s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/ament_index/resource_index/packages/my_rover
+[0.067s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover/cmake/my_roverConfig.cmake
+[0.067s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover/cmake/my_roverConfig-version.cmake
+[0.067s] -- Up-to-date symlink: /home/poridhi/development/ros2-beginners-level-2/my_bot/install/my_rover/share/my_rover/package.xml
+[0.069s] Invoked command in '/home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/poridhi/development/ros2-beginners-level-2/my_bot/build/my_rover
