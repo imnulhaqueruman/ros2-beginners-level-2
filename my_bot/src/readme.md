@@ -59,14 +59,43 @@ ros2 launch my_rover launch_sim.launch.py world:=./src/my_rover/worlds/obstacle.
 ```
 2. 
 ```bash
-ros2 run rviz2 rviz2
+ros2 run rviz2 rviz2 -d ~/src/my_rover/config/main.rviz
 
 ```
 3. Slam launch 
 
 ```bash
 cd ~/development/ros2-beginners-level-2/my_bot
-ros2 launch slam_toolbox online_async_launch.py params_file:= ./src/my_rover/config/mapper_params_online_async.yaml use_sim_time:=true
+ros2 launch slam_toolbox online_async_launch.py params_file:=./src/my_rover/config/mapper_params_online_async.yaml use_sim_time:=true
 
 ```
 4. ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
+# Install Nav2 
+```bash
+sudo apt install \
+  ros-$ROS_DISTRO-navigation2 \
+  ros-$ROS_DISTRO-nav2-bringup \
+  ros-$ROS_DISTRO-turtlebot3*
+
+```
+# Run map server 
+```bash
+ros2 run nav2_map_server map_server --ros-args -p yaml_filename:=my_map_save.yaml -p use_sim_time:=true
+
+# other terminal 
+
+ros2 run nav2_util lifecycle_bringup map_server 
+
+# Run amcl 
+ ros2 run nav2_amcl amcl --ros-args -p use_sim_time:=true
+
+ # Run life cylce for amcl 
+
+ ros2 run nav2_util lifecycle_bringup amcl
+
+```
+
+# Nav2 
+
+1. sudo apt install ros-humble-twist-mux
